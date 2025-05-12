@@ -10,7 +10,7 @@ function Navbar(){
   return (
     <>
       <nav className='nav'>
-        <NavLink className='nav-left' to='/'>Tolga Han</NavLink>
+        <NavLink className='nav-left' to='/'><span className='highlight'>T</span>olga.</NavLink>
           <ul className="nav-ul">
             <button className='burger' onClick={()=> setIsOpen(!isOpen)}><FaBars size={30}/></button>
             <li className='nav-ul-li'>
