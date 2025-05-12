@@ -1,0 +1,136 @@
+.home{
+  animation: slideInY 0.5s ease-out 0.2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 40rem;
+}
+
+.home-right{
+  animation: slideInX 0.5s ease-out 0.5s;
+  animation-fill-mode: forwards;
+  line-height: 2rem;
+  opacity: 0;
+  display: grid;
+  padding: 5rem;
+}
+
+.home-right-text{
+  color: var(--font-color);
+}
+
+.home-right-text-name{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.home-right-text-title{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.home-right-links{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: -2.5rem;
+  gap: 1rem;
+}
+
+.home-right-links a{
+  border-radius: 1.5rem;
+  justify-content: center;
+  font-size: 1.5rem;
+  align-items: center;
+  color: var(--font-color);
+  max-height: 2rem;
+}
+
+.home-right-links a:hover{
+  transition: 0.2s;
+  color: var(--hover-color);
+}
+
+.home-right-links-icon{
+  position: relative;
+  top: 0.13rem;
+}
+
+.home p{
+  align-self: center;
+  margin: 0;
+}
+
+
+.home img {
+  justify-self: center;
+  width: 100%;
+}
+
+@keyframes slideInY {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInX {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home{
+      display: grid;
+      grid-template-columns: auto;
+      grid-auto-flow: row;
+      animation: slideInX 0.5s ease-out 0.1s;
+      animation-fill-mode: forwards;
+      min-width: 0rem;
+      margin-top: 10rem;
+  }
+
+  .home-right-links-icon{
+    position: relative;
+    top: 0.13rem;
+    font-size: 2.5rem;
+  }
+
+  .home img {
+    justify-self: center;
+    width: 80%;
+  }
+
+  .home-right-text-name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .home-right-text-title{
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .home-right{
+    animation: slideInY 0.5s ease-out 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  .home-right-links{
+    margin-top: 1.5rem;
+  }
+}
