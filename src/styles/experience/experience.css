@@ -38,7 +38,7 @@
   border-radius:3rem 3rem 100rem 0 / 3rem 3rem 50rem 50rem;
   height: 12rem;
   background:var(--hover-color);
-  color: var(--font-color);
+  color: var(--off-white);
   font-size: 5rem;
 }
 
