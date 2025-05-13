@@ -1,11 +1,11 @@
 :root{
   --primary-color:#1B4D3E;
-  --secondary-color:#90EE90;
+  --secondary-color:	#50C878;
   --font-color-2:#F1E3D3;
   --font-color: #3a3a3a;
-  --hover-color:#90EE90 ;
-  --mono-chromatisch:#A2796E;
+  --hover-color:#50C878 ;
+  --mono-chromatisch:#f0f0f0a1;
   --test-nav:#ADCCC3;
-  --off-white: #FFFF;
+  --off-white: 		#FFFFF0;
   --contrast-color: #eeeeee;
 }

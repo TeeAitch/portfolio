@@ -12,18 +12,30 @@
   animation-fill-mode: forwards;
   line-height: 2rem;
   opacity: 0;
+  order:0;
   display: grid;
   padding: 5rem;
 }
 
 .home-right-text{
+  display: grid;
+  font-size: 2.5rem;
+  row-gap: 0.5rem;
+  grid-template-columns: 1fr auto;
+  text-align: left;
   color: var(--font-color);
+}
+
+.home-text{
+  text-align: left;
+  font-size: medium;
+  line-height: 0rem;
 }
 
 .home-right-text-name{
   font-weight: bold;
   color: var(--secondary-color);
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 3rem;
 }
 
@@ -33,11 +45,12 @@
 }
 
 .home-right-links{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  margin-top: -2.5rem;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 5rem;
+  margin-top: -1.5rem;
+  text-align: left;
+  height: 2rem;
 }
 
 .home-right-links a{
@@ -68,6 +81,7 @@
 .home img {
   justify-self: center;
   width: 100%;
+  order: 0;
 }
 
 @keyframes slideInY {
@@ -84,7 +98,7 @@
 @keyframes slideInX {
   from {
     opacity: 0;
-    transform: translateX(20%);
+    transform: translateX(-20%);
   }
   to{
     opacity: 1;
@@ -111,12 +125,12 @@
 
   .home img {
     justify-self: center;
+    order: -1;
     width: 80%;
   }
 
   .home-right-text-name{
     font-weight: bold;
-    font-size: 1.5rem;
     line-height: 3rem;
   }
 

@@ -1,12 +1,11 @@
 import {NavLink} from 'react-router-dom'
 import { useState } from 'react';
 import '@styles/navigation/Navbar.css'
-import {FaBars} from 'react-icons/fa'
+import {FaBars, FaRegMoon} from 'react-icons/fa'
 import { navLinks } from '@/config';
 
 function Navbar(){
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen)
   return (
     <>
       <nav className='nav'>
@@ -22,6 +21,7 @@ function Navbar(){
                     {label}
                   </NavLink>
               ))}
+              <a className='nav-moon'><FaRegMoon size={24}/></a>
             </li>
           </ul>
       </nav>

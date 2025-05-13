@@ -1,17 +1,17 @@
 
 import '@styles/home/Home.css'
-import image from '../../public/vite.svg'
+import picture from '../../public/picture.jpg'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import { socialLinks } from '@/config'
 function Home(){
   return (
     <div className='home'>
-      <img src={image} alt="nothing"/>
         <div className='home-right'>
             <div className='home-right-text'>
-              <p>Hello I'm</p>
-              <p className='home-right-text-name'>Tolga Han</p>
-              <p className='home-right-text-title'>Full-Stack Developer</p>
+              <p>Hello I'm
+              <span className='home-right-text-name'> Tolga <br/></span>
+              <span className='home-text'>Fullstack developer with completed vocational training as an IT specialist for application development and one year of project experience in an agile environment with Java, Javascript, Typescript, C# and Python.</span>
+              </p>
             </div>
             <div className='home-right-links'>   
               <a 
@@ -28,6 +28,7 @@ function Home(){
 
             </div>
         </div>
+        <img className="home-image" src={picture} alt="nothing"/>
     </div>
   )
 }
