@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import '@styles/navigation/Navbar.css'
-import { FaBars, FaRegMoon, FaRegSun } from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
+import { FiSun, FiMoon } from 'react-icons/fi';
 import { navLinks } from '@/config';
 
 function Navbar() {
@@ -32,12 +33,13 @@ function Navbar() {
             ))}
             <a className='nav-color-mode' onClick={toggleTheme}>
               {isLight ?
-                <FaRegMoon className='nav-color-mode-icon' size={24} /> :
-                <FaRegSun size={27} />}
+                <FiMoon className='nav-color-mode-icon' size={24} /> :
+                <FiSun size={27} />}
             </a>
           </li>
         </ul>
       </nav>
+
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <ul>
           {navLinks.map(({ to, label }) => (
@@ -49,8 +51,14 @@ function Navbar() {
               >
                 {label}
               </NavLink>
+
             </li>
           ))}
+          <a className='nav-color-mode' onClick={toggleTheme}>
+            {isLight ?
+              <FiMoon className='nav-color-mode-icon' size={24} /> :
+              <FiSun size={27} />}
+          </a>
         </ul>
       </div>
     </>
