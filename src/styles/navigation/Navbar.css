@@ -48,10 +48,13 @@
 
 .nav ul li {
   display: flex;
-  gap: 3rem;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
 }
 
 .nav ul li a {
+  display: flex;
   font-size: 1.2rem;
   color: var(--font-color);
 }
@@ -92,7 +95,9 @@
 .sidebar{
     display: none;
   }
-
+.sidebar-icon{
+  visibility: hidden;
+}
 .burger{
   background: none;
   border: none;
@@ -124,26 +129,35 @@
     overflow: scroll;
     scrollbar-width: none;
   }
+  .sidebar-icon{
+    visibility: visible;
 
+  }
   .burger{
-    margin-top: 0.5rem;
+    margin-top: 0.35rem;
+    margin-left: 2rem;
     display: block;
-    margin-right: 2rem;
   }
-
-  .nav ul{
-    margin-right: -5rem;
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
   }
-
+  .special{
+    position: relative;
+    left: 5rem;
+    margin-left: auto;
+  }
   .nav ul li{
-    display: none;
+    align-self: flex-end;
+    gap: 0rem;
   }
 
   .nav-link.active{
     font-size: 1.2rem;
     border-radius: 0.3rem;
     color: var(--hover-color);
-    background-color: var(--font-color);
   }
 
   .sidebar ul {
@@ -163,7 +177,7 @@
 
   .sidebar ul li a {
     font-size: 1.2rem;
-    color: var(--font-color);
+    color: var(--fixed-color);
     padding: 0 1rem 0 1rem;
   }
 
@@ -173,7 +187,6 @@
     color: var(--hover-color);
     transition: 0.3s;
     padding: 0 1rem 0 1rem;
-    background-color: var(--font-color);
   }
 
   .sidebar{
@@ -200,7 +213,7 @@
   .nav-left {
     font-weight: bold;
     font-size: 2rem;
-    margin-left: 5rem;
+    margin-left: 1rem;
     color: var(--font-color);
   }
   .highlight{
@@ -211,8 +224,28 @@
 
   .nav-left:hover {
     font-weight: bold;
-    margin-left: 5rem;
+    font-size: 2rem;
+    margin-left: 1rem;
     color: var(--font-color);
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.2);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity .3s ease-in;
+    backdrop-filter: blur(2px);
+  }
+
+   .sidebar-overlay.hidden {
+    z-index: 0;
+    transition: none;
+    opacity: 0;
   }
 }
 
