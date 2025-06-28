@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### About the Project
 
-Currently, two official plugins are available:
+This is my personal portfolio website built using ReactJS and Vite. It showcases my skills, projects, and experience in a clean and modern interface. The site is designed to be fast, responsive, and easy to navigate.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Key Features
 
-## Expanding the ESLint configuration
+* Developed with React functional components and hooks
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* Fast build and hot module replacement powered by Vite
 
-- Configure the top-level `parserOptions` property like this:
+* Responsive design optimized for desktop and mobile
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+* Sections include About Me, Skills, Projects, and Contact
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+* Smooth scrolling and simple animations for enhanced UX
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Getting Started
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Installation
+
+1. **Clone the Repository**
+
+    ```bash
+    git clone https://github.com/TeeAitch/portfolio.git
+    ```
+
+2. **Navigate to the project directory**
+
+    ```bash
+    cd portfolio
+    ```
+
+3. **Install dependencies**
+
+    ```bash
+    yarn install
+    ```
+
+4. **Start the development server**
+
+    ```bash
+    yarn dev
+    ```
+
+5. **Open your browser**
+
+    Visit `http://localhost:5173` (or the URL shown in the terminal) to view the website.
+
+
+      

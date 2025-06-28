@@ -1,11 +1,23 @@
 :root{
   --primary-color:#1B4D3E;
   --secondary-color:	#50C878;
-  --font-color-2:#F1E3D3;
-  --font-color: #3a3a3a;
+  --font-color-2:#eeeeee;
+  --font-color: #eeeeee;
   --hover-color:#50C878 ;
-  --mono-chromatisch:#000000a1;
+  --mono-chromatisch:#2F2F2F;
   --test-nav:#ADCCC3;
-  --off-white: 		#FFFFF0;
+  --background-color: #222222;
+  --contrast-color: #eeeeee;
+}
+
+.light-theme {
+  --primary-color:#1B4D3E;
+  --secondary-color:	#50C878;
+  --font-color-2:#eeeeee;
+  --font-color: #222222;;
+  --hover-color:#50C878 ;
+  --mono-chromatisch:#2F2F2F;
+  --test-nav:#ADCCC3;
+  --background-color: 		#FFFFFF;
   --contrast-color: #eeeeee;
 }

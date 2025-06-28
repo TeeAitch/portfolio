@@ -29,4 +29,6 @@ body {
   display: flex;
   place-items: center;
   min-height: 100vh;
+  background: var(--background-color);
+  color: var(--font-color);
 }

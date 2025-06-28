@@ -1,7 +1,7 @@
-function Contact(){
+function Contact() {
   return (
     <div>
-      <p>Contact</p>
+      <p>Contact page is still in progress. Stay tuned!</p>
     </div>
   )
 }

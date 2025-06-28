@@ -1,7 +1,7 @@
-function Project(){
+function Project() {
   return (
     <div>
-      <p>Projects</p>
+      <p>Projects page is still in progress. Stay tuned!</p>
     </div>
   )
 }

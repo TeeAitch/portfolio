@@ -14,6 +14,7 @@
   transform: translateY(0%);
   padding-top: 0.7rem;
   background: var(--mono-chromatisch);
+  color: var(--font-color-2);
   transition: .2s;
   display: flex;
   align-items: center;
@@ -38,7 +39,7 @@
   border-radius:3rem 3rem 100rem 0 / 3rem 3rem 50rem 50rem;
   height: 12rem;
   background:var(--hover-color);
-  color: var(--off-white);
+  color: var(--font-color-2);
   font-size: 5rem;
 }
 
