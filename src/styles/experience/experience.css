@@ -14,7 +14,7 @@
   transform: translateY(0%);
   padding-top: 0.7rem;
   background: var(--mono-chromatisch);
-  color: var(--font-color-2);
+  color: var(--font-color);
   transition: .2s;
   display: flex;
   align-items: center;

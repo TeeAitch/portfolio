@@ -7,6 +7,7 @@
   align-items: center;
   position: fixed;
   background-color: var(--background-color);
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
   top: 0;
   left: 0;
   padding-top: 1.2rem;
@@ -18,7 +19,7 @@
 
 .nav ul {
   display: flex;
-  width: 40%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   list-style: none;
@@ -33,18 +34,19 @@
   color: var(--font-color);
 }
 
-.highlight{
-  font-size: 2.3rem;
-  color: var(--secondary-color);
-  margin-right: -0.07rem;
-}
-
 .nav-left:hover {
   font-weight: bold;
   margin-left: 8rem;
   font-size: 2rem;
   color: var(--font-color);
 }
+
+.highlight{
+  font-size: 2.3rem;
+  color: var(--secondary-color);
+  margin-right: -0.07rem;
+}
+
 
 .nav ul li {
   display: flex;
@@ -119,6 +121,14 @@
 @media screen and (min-width: 2000px) {
     .nav-left {
     margin-left: 30rem;
+  }
+
+  .nav-left:hover {
+    margin-left: 30rem;
+  }
+
+  .nav ul {
+    margin-right: 30rem;
   }
 
   

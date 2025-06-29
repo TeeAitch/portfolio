@@ -24,7 +24,7 @@ function Navbar() {
       <a className={classname} onClick={toggleTheme}>
         {isLight ?
           <FiMoon className='nav-color-mode-icon' size={24} /> :
-          <FiSun size={27} />}
+          <FiSun size={24} />}
       </a>)
   }
 
