@@ -1,5 +1,5 @@
 import '@styles/experience/experience.css'
-import { FaReact, FaPython, FaDocker, FaGit, FaJava } from 'react-icons/fa'
+import { FaReact, FaPython, FaDocker, FaGit, FaJava, FaJenkins } from 'react-icons/fa'
 import { SiDjango, SiTypescript, SiSpringboot } from 'react-icons/si'
 
 function Experience() {
@@ -12,6 +12,7 @@ function Experience() {
     { name: "Java", icon: <FaJava /> },
     { name: "Typescript", icon: <SiTypescript /> },
     { name: "Spring Boot", icon: <SiSpringboot /> },
+    { name: "Jenkins", icon: <FaJenkins /> },
   ]
 
   return (
