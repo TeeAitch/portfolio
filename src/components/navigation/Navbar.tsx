@@ -1,29 +1,22 @@
+import '@styles/navigation/Navbar.css'
 import { NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react';
-import '@styles/navigation/Navbar.css'
 import { FaBars } from 'react-icons/fa'
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { navLinks } from '@/config';
+import { IsMobile } from '@util/Helper';
 
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isLight, setIsLight] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
   const toggleTheme = () => {
     document.body.classList.toggle('light-theme');
     setIsLight(document.body.classList.contains('light-theme'));
   };
   useEffect(() => {
     setIsLight(document.body.classList.contains('light-theme'));
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const renderIcon = (classname: string) => {
@@ -39,14 +32,12 @@ function Navbar() {
     return (
       <li className='nav-ul-li'>
         {navLinks.map(({ to, label }) => (
-          <li key={to}>
-            <NavLink
-              to={to}
-              className={({ isActive }) => (isActive ? "nav-link active" : "")}
-            >
-              {label}
-            </NavLink>
-          </li>
+          <NavLink
+            to={to}
+            className={({ isActive }) => (isActive ? "nav-link active" : "")}
+          >
+            {label}
+          </NavLink>
         ))}
         {renderIcon('nav-color-mode')}
       </li>
@@ -62,7 +53,7 @@ function Navbar() {
             {renderIcon('sidebar-icon')}
             <button className='burger' onClick={() => setIsOpen(!isOpen)}><FaBars size={30} /></button>
           </li>
-          {screenWidth > 768 ? renderNavigation() : null}
+          {IsMobile() ? null : renderNavigation()}
         </ul>
       </nav>
 

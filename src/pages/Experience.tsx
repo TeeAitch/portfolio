@@ -1,17 +1,17 @@
 import '@styles/experience/experience.css'
-import {FaReact, FaPython, FaDocker, FaGit, FaJava} from 'react-icons/fa' 
-import {SiDjango, SiTypescript, SiSpringboot} from 'react-icons/si'
+import { FaReact, FaPython, FaDocker, FaGit, FaJava } from 'react-icons/fa'
+import { SiDjango, SiTypescript, SiSpringboot } from 'react-icons/si'
 
-function Experience(){
+function Experience() {
   const experiences = [
-    {name: "react", icon: <FaReact/>},
-    {name: "python", icon: <FaPython/>},
-    {name: "docker", icon: <FaDocker/>},
-    {name: "git", icon: <FaGit/>},
-    {name: "django", icon: <SiDjango/>},
-    {name: "java", icon: <FaJava/>},
-    {name: "typescript", icon: <SiTypescript/>},
-    {name: "Spring Boot", icon: <SiSpringboot/>},
+    { name: "React", icon: <FaReact /> },
+    { name: "Python", icon: <FaPython /> },
+    { name: "Docker", icon: <FaDocker /> },
+    { name: "Git", icon: <FaGit /> },
+    { name: "Django", icon: <SiDjango /> },
+    { name: "Java", icon: <FaJava /> },
+    { name: "Typescript", icon: <SiTypescript /> },
+    { name: "Spring Boot", icon: <SiSpringboot /> },
   ]
 
   return (

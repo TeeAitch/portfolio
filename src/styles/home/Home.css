@@ -110,7 +110,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
   .home{
       display: grid;
       grid-template-columns: auto;
@@ -130,6 +130,7 @@
 
   .home img {
     justify-self: center;
+    max-width: 30rem;
     order: -1;
     width: 80%;
   }
