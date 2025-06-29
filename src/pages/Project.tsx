@@ -1,7 +1,7 @@
 function Project() {
   return (
     <div>
-      <p>🚧 Projects page is still in progress. Stay tuned! here are my projects</p>
+      <p>🚧 Projects page is still in progress. Stay tuned!</p>
     </div>
   )
 }
