@@ -10,7 +10,12 @@ function Home() {
         <div className='home-right-text'>
           <p>Hello I'm
             <span className='home-right-text-name'> Tolga <br /></span>
-            <span className='home-text'>Full-Stack developer with completed vocational training as an IT specialist in application development and one year of project experience in an agile environment using Java, JavaScript, TypeScript and Python.</span>
+            <span className='home-text'>
+              Full-Stack developer with completed vocational
+              training as an IT specialist in application development
+              and one year of project experience in an agile environment
+              using Java, JavaScript, TypeScript and Python.
+            </span>
           </p>
         </div>
         <div className='home-right-links'>

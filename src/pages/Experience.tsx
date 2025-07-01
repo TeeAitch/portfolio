@@ -26,4 +26,4 @@ function Experience() {
     </div>
   )
 }
-export default Experience
+export default Experience;
