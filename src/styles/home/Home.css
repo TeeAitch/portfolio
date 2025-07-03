@@ -23,7 +23,7 @@
   row-gap: 0.5rem;
   grid-template-columns: 1fr auto;
   text-align: left;
-  color: var(--font-color);
+  color: var(--mantine-color-text);
 }
 
 .home-text{
@@ -58,7 +58,8 @@
   justify-content: center;
   font-size: 1.5rem;
   align-items: center;
-  color: var(--font-color);
+  margin-top: 1rem;
+  color: var(--mantine-color-text);
   max-height: 2rem;
 }
 

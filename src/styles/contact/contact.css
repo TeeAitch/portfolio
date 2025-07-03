@@ -1,0 +1,9 @@
+.contact-form{
+    min-width: 700px ;
+    width: 100%;
+}
+
+.contact-form .mantine-TextInput-root,
+.contact-form .mantine-Textarea-root {
+    width: 100%;
+}
