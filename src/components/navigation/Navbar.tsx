@@ -1,30 +1,22 @@
 import '@styles/navigation/Navbar.css'
 import { NavLink } from 'react-router-dom'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { FaBars } from 'react-icons/fa'
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { navLinks } from '@/config';
 import { IsMobile } from '@util/Helper';
+import { useMantineColorScheme } from '@mantine/core';
 
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLight, setIsLight] = useState(false);
-
-  const toggleTheme = () => {
-    document.body.classList.toggle('light-theme');
-    setIsLight(document.body.classList.contains('light-theme'));
-  };
-  useEffect(() => {
-    setIsLight(document.body.classList.contains('light-theme'));
-  }, []);
-
+  const { toggleColorScheme, colorScheme } = useMantineColorScheme({ keepTransitions: true });
   const renderIcon = (classname: string) => {
     return (
-      <a className={classname} onClick={toggleTheme}>
-        {isLight ?
-          <FiMoon className='nav-color-mode-icon' size={24} /> :
-          <FiSun size={24} />}
+      <a className={classname} onClick={() => toggleColorScheme()}>
+        {colorScheme === 'dark' ?
+          <FiSun size={24} /> :
+          <FiMoon className='nav-color-mode-icon' size={24} />}
       </a>)
   }
 

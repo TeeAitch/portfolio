@@ -6,6 +6,5 @@ export const socialLinks = {
 export const navLinks = [
   { to: "/", label: "About" },
   { to: "/experience", label: "Experience" },
-  { to: "/projects", label: "Projects" },
   { to: "/contact", label: "Contact" },
 ];

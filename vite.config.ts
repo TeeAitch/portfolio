@@ -13,12 +13,16 @@ export default defineConfig({
         "@components": path.join(__dirname, "/src/components"),
         "@styles": path.join(__dirname, "/src/styles"),
         "@util": path.join(__dirname, "/src/util"),
+        "@context": path.join(__dirname, "/src/context"),
+        "@themes": path.join(__dirname, "/src/themes"),
       } : {
         "@": path.resolve(__dirname, "/src"),
         "@pages": path.resolve(__dirname, "/src/pages"),
         "@components": path.resolve(__dirname, "/src/components"),
         "@styles": path.resolve(__dirname, "/src/styles"),
         "@util": path.resolve(__dirname, "/src/util"),
+        "@context": path.resolve(__dirname, "/src/context"),
+        "@themes": path.resolve(__dirname, "/src/themes"),
       })
     }
   }
